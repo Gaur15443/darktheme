@@ -1,12 +1,11 @@
-// src/context/ThemeProvider.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Appearance } from 'react-native';
-import theme from '../theme';
+import theme from '../theme'; // adjust path
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const colorScheme = Appearance.getColorScheme() || 'light';
+  const colorScheme = Appearance.getColorScheme(); // system theme (light/dark)
   const [isDark, setIsDark] = useState(colorScheme === 'dark');
 
   useEffect(() => {
@@ -16,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
     return () => subscription.remove();
   }, []);
 
-  const toggleTheme = () => setIsDark(prev => !prev);
+  const toggleTheme = () => setIsDark(!isDark);
 
   return (
     <ThemeContext.Provider
