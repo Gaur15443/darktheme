@@ -1,0 +1,57 @@
+workflows:
+  react-native-apk:
+    name: React Native APK Build
+    max_build_duration: 120
+    instance_type: mac_mini_m1
+    environment:
+      android_signing:
+        - keystore_reference
+      vars:
+        PACKAGE_NAME: 'com.imeuswe.app'
+        KEYSTORE_PASSWORD: $KEYSTORE_PASSWORD
+        KEY_PASSWORD: $KEY_PASSWORD
+      java: 17
+      node: 20.18.0
+
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'feat/rn-0.81'
+          include: true
+          source: true
+
+    scripts:
+      - name: Configure Android SDK path
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
+
+      - name: Install npm dependencies
+        script: |
+          npm install --legacy-peer-deps
+
+      - name: Clean Gradle build
+        script: |
+          cd android
+          ./gradlew clean
+
+      - name: Build Android release APK
+        script: |
+          cd android
+          ./gradlew assembleStagingRelease 
+
+      - name: Copy APK to artifacts
+        script: |
+          mkdir -p $CM_BUILD_DIR/build
+          cp android/app/build/outputs/apk/staging/release/app-staging-release.apk $CM_BUILD_DIR/build/
+
+    artifacts:
+      - build/app-staging-release.apk
+
+    publishing:
+      email:
+        recipients:
+          - akanksha.deshmukh@eligarf.tech
+        notify:
+          success: true
+          failure: true

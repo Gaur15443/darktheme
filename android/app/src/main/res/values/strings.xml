@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">iMeUsWe</string>
+    <string name="facebook_app_id">835202471373097</string>
+    <string name="fb_login_protocol_scheme">835202471373097</string>
+    <string name="facebook_client_token">3985318cc3d6fad1b1c4961bc251fff7</string>
+</resources>

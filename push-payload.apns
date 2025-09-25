@@ -1,0 +1,11 @@
+{
+  "aps": {
+    "alert": {
+      "title": "Test Notification",
+      "body": "Testing CommunityDetails screen navigation"
+    },
+    "sound": "default"
+  },
+  "wzrk_dl": "imeuswe://CommunityDetails/5294e74830909a698c29f86913dde704:db78462f4f5254e75c2b5e5ca42ed5299f5e7d91e1007658efe2a920dee6e68f",
+  "screen": "CommunityDetails"
+}

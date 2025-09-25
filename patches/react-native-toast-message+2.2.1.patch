@@ -1,0 +1,15 @@
+diff --git a/node_modules/react-native-toast-message/lib/src/Toast.js b/node_modules/react-native-toast-message/lib/src/Toast.js
+index 0559ce5..057a9a4 100644
+--- a/node_modules/react-native-toast-message/lib/src/Toast.js
++++ b/node_modules/react-native-toast-message/lib/src/Toast.js
+@@ -82,7 +82,9 @@ function getRef() {
+     return activeRef.current;
+ }
+ Toast.show = (params) => {
+-    getRef()?.show(params);
++    if(params.text1 !== "Api cancelled" || params.text2 !== "Api cancelled" || params.text1 !== "Request failed with status code 401" || params.text2 !== "Request failed with status code 401"){
++        getRef()?.show(params);
++    }
+ };
+ Toast.hide = (params) => {
+     getRef()?.hide(params);

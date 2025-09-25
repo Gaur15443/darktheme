@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-complete-tag",
+    "aaron-bond.better-comments",
+    "usernamehw.errorlens",
+    "dbaeumer.vscode-eslint",
+    "msjsdiag.vscode-react-native",
+    "yoavbls.pretty-ts-errors",
+    "rvest.vs-code-prettier-eslint",
+    "christian-kohler.npm-intellisense",
+    "dsznajder.es7-react-js-snippets"
+  ]
+}

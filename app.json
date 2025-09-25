@@ -1,0 +1,11 @@
+{
+  "name": "imeuswe",
+  "displayName": "imeuswe",
+
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8322237666615794~9775561785",
+    "ios_app_id": "ca-app-pub-8322237666615794~5428041097",
+    "delay_app_measurement_init": true,
+    "user_tracking_usage_description": "This helps iMeUsWe show you more relevant ads."
+  }
+}

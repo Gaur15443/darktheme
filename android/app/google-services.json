@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "795162688937",
+    "project_id": "analytics-imeuswe-prod-a6d70",
+    "storage_bucket": "analytics-imeuswe-prod-a6d70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795162688937:android:a0f587d866a98b049d98b8",
+        "android_client_info": {
+          "package_name": "com.imeuswe.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795162688937-n8k38qadtj3t6i5pu6dc3qala51uaq6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkUAhH5fsaPArs7FygtT6O7jtXdg_rAiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795162688937-n8k38qadtj3t6i5pu6dc3qala51uaq6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "795162688937-c622lvvu8sprb1luo5gljarnbvenvjr5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.imeuswe.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

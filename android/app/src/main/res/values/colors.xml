@@ -1,0 +1,5 @@
+<resources>
+    <!-- Define your custom color -->
+    <color name="primaryOrange">#E77237</color>
+    <!-- Other colors -->
+</resources>

@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-native-gifted-chat/lib/Composer.js b/node_modules/react-native-gifted-chat/lib/Composer.js
+index becd702..9c5195a 100644
+--- a/node_modules/react-native-gifted-chat/lib/Composer.js
++++ b/node_modules/react-native-gifted-chat/lib/Composer.js
+@@ -23,7 +23,8 @@ export function Composer({ composerHeight = MIN_COMPOSER_HEIGHT, disableComposer
+             styles.textInput,
+             textInputStyle,
+             {
+-                height: composerHeight,
++               ...(Platform.OS === 'ios' ? {} :{ height: composerHeight}),
++               maxHeight:200,
+                 ...Platform.select({
+                     web: {
+                         outlineWidth: 0,

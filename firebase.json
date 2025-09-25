@@ -1,0 +1,14 @@
+{
+  "react-native": {
+    "android_task_executor_maximum_pool_size": 10,
+    "android_task_executor_keep_alive_seconds": 3,
+    "analytics_auto_collection_enabled": true,
+    "messaging_auto_init_enabled": true,
+    "messaging_ios_auto_register_for_remote_messages": true,
+    "remote_config": {
+      "fetch_timeout_seconds": 60,
+      "minimum_fetch_interval_seconds": 3600
+    },
+    "messaging_android_notification_color": "@color/primaryOrange"
+  }
+}

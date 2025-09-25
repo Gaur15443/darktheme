@@ -1,0 +1,31 @@
+diff --git a/node_modules/react-native-element-dropdown/src/components/Dropdown/index.tsx b/node_modules/react-native-element-dropdown/src/components/Dropdown/index.tsx
+index 9c6a599..cda2e16 100644
+--- a/node_modules/react-native-element-dropdown/src/components/Dropdown/index.tsx
++++ b/node_modules/react-native-element-dropdown/src/components/Dropdown/index.tsx
+@@ -210,7 +210,7 @@ const DropdownComponent: <T>(
+           const left = I18nManager.isRTL ? W - width - pageX : pageX;
+ 
+           setPosition({
+-            isFull,
++            isFull: false,
+             width: Math.floor(width),
+             top: Math.floor(top + statusBarHeight),
+             bottom: Math.floor(bottom - statusBarHeight),
+diff --git a/node_modules/react-native-element-dropdown/src/components/Dropdown/styles.ts b/node_modules/react-native-element-dropdown/src/components/Dropdown/styles.ts
+index 2c83bdd..e584d33 100644
+--- a/node_modules/react-native-element-dropdown/src/components/Dropdown/styles.ts
++++ b/node_modules/react-native-element-dropdown/src/components/Dropdown/styles.ts
+@@ -1,4 +1,4 @@
+-import { I18nManager, StyleSheet } from 'react-native';
++import { I18nManager, Platform, StyleSheet } from 'react-native';
+ 
+ export const styles = StyleSheet.create({
+   mainWrap: {
+@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
+     borderWidth: 0.5,
+     borderColor: '#EEEEEE',
+     backgroundColor: 'white',
++    top:Platform.OS === 'ios' ? 0: 28,
+     shadowColor: '#000',
+     shadowOffset: {
+       width: 0,

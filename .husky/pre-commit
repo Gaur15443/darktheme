@@ -1,0 +1,5 @@
+# Run TypeScript type checking and linting on staged files
+npx lint-staged
+
+# Run TypeScript type checking on entire project
+
