@@ -1,16 +1,26 @@
 /** @format */
 
-// Colors based on your Figma palette
+// Colors based on your UI palette
 const light = {
+  // Primary Colors
   primary: '#E77237',
+  primaryAlt: '#FFFFFF',
+
+  // Background Colors
   backgroundMobile: '#FEF9F1',
   backgroundWeb: '#F8F7FA',
+
+  // Secondary Colors
   secondary1: '#FFCA01',
   secondary2: '#035997',
   secondary3: '#2892FF',
+
+  // Text Colors
   textPrimary: '#444444',
   textSecondary: '#888888',
   textBlack: '#000000',
+
+  // Family Wall Elements
   familyWallStories: '#2DAAFF',
   familyWallAudio: '#27C394',
   familyWallMoments: '#EFBE29',
@@ -18,23 +28,32 @@ const light = {
 };
 
 const dark = {
+  // Primary Colors
   primary: '#E77237',
   primaryAlt: '#212124',
+
+  // Background Colors
   backgroundMobile: '#131416',
   backgroundWeb: '#131416',
+
+  // Secondary Colors
   secondary1: '#533300',
   secondary2: '#FFFFFF',
   secondary3: '#6990CE',
+
+  // Text Colors
   textPrimary: '#FFFFFF',
   textSecondary: '#EDEDED',
   textMuted: '#777777',
+
+  // Family Wall Elements
   familyWallStories: '#005086',
   familyWallAudio: '#007351',
   familyWallMoments: '#8B6800',
   familyWallQuotes: '#720000',
 };
 
-// font
+// Font settings
 const fontWeights = {
   light: '200',
   normal: '400',
